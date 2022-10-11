@@ -491,12 +491,19 @@ header {
     margin: 2rem 0;
 }
 
+.project:hover {
+   cursor: pointer;
+   box-shadow: 2px 2px 15px 2px var(--clr-dark);
+}
+
 @media (min-width: 800px) {
     .projects {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-evenly;
+        align-items: center;
         flex-wrap: wrap;
+        gap: 30px 0px;
     }    
 
     .project {
@@ -514,6 +521,10 @@ header {
 .frontend-mentor-link:hover {
     cursor: pointer;
     box-shadow: 2px 2px 15px 2px var(--clr-light);
+}
+
+.frontend-mentor-tag {
+    margin-bottom: 100px;
 }
 /* Footer */
 
