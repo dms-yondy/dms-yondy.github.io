@@ -1,0 +1,140 @@
+:root {
+  --orange: #fe7613;
+  --white: #ffffff;
+  --light-grey: #818994;
+  --medium-grey: #262f38;
+  --dark-blue: #1e252f;
+  --very-dark-blue: #141519;
+}
+
+h2 {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--very-dark-blue);
+  font-family: "Outfit", sans-serif;
+  color: var(--white);
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0;
+}
+
+.star-icon {
+  width: 20px;
+  background: var(--medium-grey);
+  padding: 0.7em;
+  border-radius: 50%;
+}
+
+.title {
+  margin-top: 15px;
+}
+
+.card {
+  background: linear-gradient(var(--dark-blue), var(--dark-blue));
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 350px;
+  border-radius: 10%;
+  padding: 30px;
+}
+
+.title {
+  margin-bottom: 0;
+}
+
+.feedback-request {
+  line-height: 1.6;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.buttons > * {
+  border-radius: 100%;
+  border-style: none;
+  width: 50px;
+  height: 50px;
+  background-color: var(--light-grey);
+}
+
+.buttons > *:hover {
+  cursor: pointer;
+  background-color: var(--white);
+}
+
+.rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.selected-button {
+  background-color: var(--orange);
+}
+
+.submit-button {
+  border-radius: 20px;
+  border-style: none;
+  height: 40px;
+  color: var(--white);
+  background-color: var(--orange);
+  font-weight: 700;
+}
+
+.submit-button:hover {
+  cursor: pointer;
+  background-color: var(--white);
+  color: var(--orange);
+}
+
+.thank-you {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.hide-card {
+  display: none;
+}
+
+.you-selected-text {
+  margin-top: 15px;
+}
+
+.thank-you-image {
+  width: 150px;
+  height: 100px;
+}
+
+.selected-rating {
+  border-radius: 30px;
+  color: var(--orange);
+  background-color: var(--white);
+  padding: 0.1rem 0.7rem;
+}
+
+.thank-you-text {
+  font-weight: 700;
+  font-size: 24px;
+  margin: 0;
+}
+
+.attribution {
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+}
