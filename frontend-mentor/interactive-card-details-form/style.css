@@ -1,0 +1,351 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-grayish-violet: hsl(270, 3%, 87%);
+  --dark-grayish-violet: hsl(279, 6%, 55%);
+  --very-dark-violet: hsl(278, 68%, 11%);
+  --red: hsl(0, 100%, 66%);
+
+  /* cards */
+
+  --card-hight-mobile: 168px;
+  --card-width-mobile: 280px;
+
+  --card-hight-desktop: 245px;
+  --card-width-desktop: 447px;
+
+  --font-size: 18px;
+  --small-font-size: 11px;
+  --font-family: "Outfit", sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: 500;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-image: url("./images/bg-main-mobile.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 50px;
+}
+
+.cards {
+  position: relative;
+  color: var(--white);
+  height: 230px;
+  width: 375px;
+}
+
+.card-back {
+  position: absolute;
+  background-image: url("./images/bg-card-back.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: var(--card-hight-mobile);
+  width: var(--card-width-mobile);
+  top: 22px;
+  right: 20px;
+}
+
+.csc {
+  position: absolute;
+  right: 35px;
+  top: 60px;
+  font-size: var(--small-font-size);
+}
+
+.card-front {
+  position: absolute;
+  background-image: url("./images/bg-card-front.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: var(--card-hight-mobile);
+  width: var(--card-width-mobile);
+  bottom: -46px;
+  left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.front-card-container {
+  width: 85%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.card-front img {
+  height: 30px;
+  width: 45px;
+  margin-top: 10px;
+}
+
+.front-card-details {
+  margin-top: 30px;
+}
+
+.card-number {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.card-number > * {
+  letter-spacing: 1.5px;
+}
+
+.name-and-exp-date {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--small-font-size);
+  margin-top: 20px;
+}
+
+.name-and-exp-date p {
+  margin-top: 0;
+}
+
+.form-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+input {
+  height: 40px;
+  border-radius: 10px;
+  border: 0.5px solid var(--light-grayish-violet);
+}
+
+input::placeholder {
+  font-size: var(--font-size);
+  color: var(--light-grayish-violet);
+  text-indent: 10px;
+}
+
+.error-outline {
+  border-color: var(--red);
+}
+
+.error {
+  position: absolute;
+  font-size: var(--small-font-size);
+  color: var(--red);
+  bottom: -18px;
+}
+
+.form-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+
+label,
+legend {
+  font-size: 12px;
+  margin-bottom: 10px;
+  letter-spacing: 1.5px;
+}
+
+.exp-date-form {
+  all: unset;
+}
+
+.exp-date-inputs {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.exp-date-inputs > input {
+  width: 60px;
+  margin-right: 10px;
+}
+
+.exp-date-and-cvc {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.form-cvc {
+  width: 100%;
+}
+
+button {
+  height: 55px;
+  margin: 20px 0;
+  background-color: var(--very-dark-violet);
+  color: var(--white);
+  font-size: var(--font-size);
+  border-radius: 10px;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.thank-you {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  max-width: 400px;
+  margin-top: 30px;
+}
+
+.hidden {
+  display: none;
+}
+
+.thank-you img {
+  width: 80px;
+  margin: 0 auto;
+}
+
+.thank-you-text {
+  font-size: 27px;
+  color: var(--very-dark-violet);
+  margin-bottom: 0;
+  letter-spacing: 1.5px;
+}
+
+.card-added-text {
+  font-size: 21px;
+  color: var(--dark-grayish-violet);
+}
+
+.attribution {
+  margin-top: auto;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1440px) {
+  body {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .attribution {
+    all: unset;
+    display: none;
+  }
+
+  .cards-container {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    min-height: 100vh;
+    max-width: 500px;
+    background-image: url("./images/bg-main-desktop.png");
+    background-size: cover;
+  }
+
+  .card-front {
+    left: unset;
+    right: unset;
+    top: unset;
+    bottom: unset;
+    height: var(--card-hight-desktop);
+    width: var(--card-width-desktop);
+    top: -175px;
+    right: -180px;
+  }
+
+  .card-back {
+    left: unset;
+    right: unset;
+    top: unset;
+    bottom: unset;
+    height: var(--card-hight-desktop);
+    width: var(--card-width-desktop);
+    bottom: -120px;
+    right: -270px;
+  }
+
+  .csc {
+    position: absolute;
+    right: unset;
+    top: unset;
+    right: 60px;
+    top: 95px;
+    font-size: 16px;
+  }
+
+  .card-front {
+    font-size: 24px;
+  }
+
+  .card-front img {
+    height: 47px;
+    width: 84px;
+    margin-top: 25px;
+  }
+
+  .front-card-details {
+    margin-top: 50px;
+  }
+
+  .card-number span {
+    letter-spacing: 4px;
+  }
+
+  .name-and-exp-date {
+    font-size: 12px;
+    margin-top: 40px;
+    letter-spacing: 2px;
+  }
+
+  .form-container {
+    width: 100%;
+    align-items: center;
+  }
+
+  form {
+    width: 400px;
+  }
+
+  .thank-you {
+    width: 400px;
+  }
+}
