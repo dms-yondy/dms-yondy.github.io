@@ -7,10 +7,6 @@
   --very-dark-blue: #141519;
 }
 
-h2 {
-  margin: 0;
-}
-
 body {
   min-height: 100vh;
   background: var(--very-dark-blue);
@@ -31,10 +27,6 @@ body {
   border-radius: 50%;
 }
 
-.title {
-  margin-top: 15px;
-}
-
 .card {
   background: linear-gradient(var(--dark-blue), var(--dark-blue));
   box-sizing: border-box;
@@ -47,11 +39,17 @@ body {
 }
 
 .title {
+  margin-top: 15px;
   margin-bottom: 0;
+  font-weight: 700;
+  letter-spacing: 2px;
 }
 
 .feedback-request {
   line-height: 1.6;
+  letter-spacing: 1px;
+  color: var(--light-grey);
+  margin: 20px 0;
 }
 
 .buttons {
@@ -66,12 +64,13 @@ body {
   border-style: none;
   width: 50px;
   height: 50px;
-  background-color: var(--light-grey);
+  background-color: var(--medium-grey);
+  color: var(--white);
 }
 
 .buttons > *:hover {
   cursor: pointer;
-  background-color: var(--white);
+  background-color: var(--orange);
 }
 
 .rating {
@@ -81,7 +80,7 @@ body {
 }
 
 .selected-button {
-  background-color: var(--orange);
+  background-color: var(--light-grey);
 }
 
 .submit-button {
@@ -91,6 +90,7 @@ body {
   color: var(--white);
   background-color: var(--orange);
   font-weight: 700;
+  letter-spacing: 2px;
 }
 
 .submit-button:hover {
@@ -121,16 +121,27 @@ body {
 }
 
 .selected-rating {
+  margin: 30px 0;
+  font-size: 15px;
+  letter-spacing: 1px;
   border-radius: 30px;
   color: var(--orange);
-  background-color: var(--white);
-  padding: 0.1rem 0.7rem;
+  background-color: var(--medium-grey);
+  padding: 0.5rem 1rem;
+}
+
+.thank-you-header {
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-size: 24px;
+  margin: 0;
 }
 
 .thank-you-text {
-  font-weight: 700;
-  font-size: 24px;
-  margin: 0;
+  color: var(--light-grey);
+  letter-spacing: 0.8px;
+  font-weight: 400;
+  font-size: 15px;
 }
 
 .attribution {
