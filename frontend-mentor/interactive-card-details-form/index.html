@@ -23,89 +23,90 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
-    <div class="cards-container">
-      <div class="cards">
-        <div class="card-back">
-          <p class="csc">000</p>
-        </div>
-        <div class="card-front">
-          <div class="front-card-container">
-            <div>
-              <img src="./images/card-logo.svg" alt="" />
-            </div>
-            <div class="front-card-details">
-              <div class="card-number">
-                <span>0000</span>
-                <span>0000</span>
-                <span>0000</span>
-                <span>0000</span>
+    <main>
+      <div class="cards-container">
+        <div class="cards">
+          <div class="card-back">
+            <p class="csc">000</p>
+          </div>
+          <div class="card-front">
+            <div class="front-card-container">
+              <div>
+                <img src="./images/card-logo.svg" alt="" />
               </div>
-              <div class="name-and-exp-date">
-                <p class="display-name">JANE APPLESPEED</p>
-                <p class="display-exp-date">00/00</p>
+              <div class="front-card-details">
+                <div class="card-number">
+                  <span>0000</span>
+                  <span>0000</span>
+                  <span>0000</span>
+                  <span>0000</span>
+                </div>
+                <div class="name-and-exp-date">
+                  <p class="display-name">JANE APPLESPEED</p>
+                  <p class="display-exp-date">00/00</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="form-container">
-      <form action="">
-        <div class="form-item">
-          <label name="card-name" for="card-name">CARDHOLDER NAME</label>
-          <input
-            required
-            type="text"
-            id="card-name"
-            placeholder="e.g. Jame Appleseed"
-          />
-          <div class="error"></div>
-        </div>
-        <div class="form-item">
-          <label name="card-number" for="card-number">CARD NUMBER</label>
-          <input
-            required
-            id="card-number"
-            placeholder="eg 1234 1234 1234 1234"
-          />
-          <div class="error"></div>
-        </div>
-        <div class="exp-date-and-cvc">
-          <div>
-            <fieldset class="exp-date-form">
-              <legend>EXP. DATE (MM/YY)</legend>
-              <div class="exp-date-inputs">
-                <input required type="number" id="exp-mm" placeholder="MM" />
-                <input required type="number" id="exp-yy" placeholder="YY" />
-                <div class="error"></div>
-              </div>
-            </fieldset>
-          </div>
-
-          <div class="form-item form-cvc">
-            <label name="cvc" for="cvc">CVC</label>
-            <input required type="number" id="cvc" placeholder="e.g. 123" />
+      <div class="form-container">
+        <form action="">
+          <div class="form-item">
+            <label name="card-name" for="card-name">CARDHOLDER NAME</label>
+            <input
+              required
+              type="text"
+              id="card-name"
+              placeholder="e.g. Jame Appleseed"
+            />
             <div class="error"></div>
           </div>
-        </div>
-        <button type="submit" class="confirm-button">Confirm</button>
-      </form>
-      <div class="thank-you hidden">
-        <img src="./images/icon-complete.svg" alt="tick icon" />
-        <p class="thank-you-text">THANK YOU!</p>
-        <p class="card-added-text">We've added your card details</p>
-        <button>Continue</button>
-      </div>
-    </div>
+          <div class="form-item">
+            <label name="card-number" for="card-number">CARD NUMBER</label>
+            <input
+              required
+              id="card-number"
+              placeholder="eg 1234 1234 1234 1234"
+            />
+            <div class="error"></div>
+          </div>
+          <div class="exp-date-and-cvc">
+            <div>
+              <fieldset class="exp-date-form">
+                <legend>EXP. DATE (MM/YY)</legend>
+                <div class="exp-date-inputs">
+                  <input required type="number" id="exp-mm" placeholder="MM" />
+                  <input required type="number" id="exp-yy" placeholder="YY" />
+                  <div class="error"></div>
+                </div>
+              </fieldset>
+            </div>
 
+            <div class="form-item form-cvc">
+              <label name="cvc" for="cvc">CVC</label>
+              <input required type="number" id="cvc" placeholder="e.g. 123" />
+              <div class="error"></div>
+            </div>
+          </div>
+          <button type="submit" class="confirm-button">Confirm</button>
+        </form>
+        <div class="thank-you hidden">
+          <img src="./images/icon-complete.svg" alt="tick icon" />
+          <p class="thank-you-text">THANK YOU!</p>
+          <p class="card-added-text">We've added your card details</p>
+          <button>Continue</button>
+        </div>
+      </div>
+    </main>
     <!-- Completed state start -->
 
-    <div class="attribution">
+    <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    </footer>
   </body>
 </html>
