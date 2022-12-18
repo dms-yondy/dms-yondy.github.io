@@ -52,11 +52,12 @@
       </div>
 
       <div class="form-container">
-        <form action="">
+        <form action="#">
           <div class="form-item">
-            <label name="card-name" for="card-name">CARDHOLDER NAME</label>
+            <label for="card-name">CARDHOLDER NAME</label>
             <input
               required
+              name="card-name"
               type="text"
               id="card-name"
               placeholder="e.g. Jame Appleseed"
@@ -64,9 +65,10 @@
             <div class="error"></div>
           </div>
           <div class="form-item">
-            <label name="card-number" for="card-number">CARD NUMBER</label>
+            <label for="card-number">CARD NUMBER</label>
             <input
               required
+              name="card-number"
               id="card-number"
               placeholder="eg 1234 1234 1234 1234"
             />
@@ -77,16 +79,34 @@
               <fieldset class="exp-date-form">
                 <legend>EXP. DATE (MM/YY)</legend>
                 <div class="exp-date-inputs">
-                  <input required type="number" id="exp-mm" placeholder="MM" />
-                  <input required type="number" id="exp-yy" placeholder="YY" />
+                  <input
+                    required
+                    name="exp-mm"
+                    type="number"
+                    id="exp-mm"
+                    placeholder="MM"
+                  />
+                  <input
+                    required
+                    name="exp-yy"
+                    type="number"
+                    id="exp-yy"
+                    placeholder="YY"
+                  />
                   <div class="error"></div>
                 </div>
               </fieldset>
             </div>
 
             <div class="form-item form-cvc">
-              <label name="cvc" for="cvc">CVC</label>
-              <input required type="number" id="cvc" placeholder="e.g. 123" />
+              <label for="cvc">CVC</label>
+              <input
+                required
+                type="number"
+                name="cvc"
+                id="cvc"
+                placeholder="e.g. 123"
+              />
               <div class="error"></div>
             </div>
           </div>
