@@ -23,103 +23,101 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
-    <main>
-      <div class="cards-container">
-        <div class="cards">
-          <div class="card-back">
-            <p class="csc">000</p>
-          </div>
-          <div class="card-front">
-            <div class="front-card-container">
-              <div>
-                <img src="./images/card-logo.svg" alt="" />
-              </div>
-              <div class="front-card-details">
-                <div class="card-number">
-                  <span>0000</span>
-                  <span>0000</span>
-                  <span>0000</span>
-                  <span>0000</span>
-                </div>
-                <div class="name-and-exp-date">
-                  <p class="display-name">JANE APPLESPEED</p>
-                  <p class="display-exp-date">00/00</p>
-                </div>
-              </div>
-            </div>
-          </div>
+    <main class="cards-container">
+      <div class="cards">
+        <div class="card-back">
+          <p class="csc">000</p>
         </div>
-      </div>
-
-      <div class="form-container">
-        <form action="#">
-          <div class="form-item">
-            <label for="card-name">CARDHOLDER NAME</label>
-            <input
-              required
-              name="card-name"
-              type="text"
-              id="card-name"
-              placeholder="e.g. Jame Appleseed"
-            />
-            <div class="error"></div>
-          </div>
-          <div class="form-item">
-            <label for="card-number">CARD NUMBER</label>
-            <input
-              required
-              name="card-number"
-              id="card-number"
-              placeholder="eg 1234 1234 1234 1234"
-            />
-            <div class="error"></div>
-          </div>
-          <div class="exp-date-and-cvc">
+        <div class="card-front">
+          <div class="front-card-container">
             <div>
-              <fieldset class="exp-date-form">
-                <legend>EXP. DATE (MM/YY)</legend>
-                <div class="exp-date-inputs">
-                  <input
-                    required
-                    name="exp-mm"
-                    type="number"
-                    id="exp-mm"
-                    placeholder="MM"
-                  />
-                  <input
-                    required
-                    name="exp-yy"
-                    type="number"
-                    id="exp-yy"
-                    placeholder="YY"
-                  />
-                  <div class="error"></div>
-                </div>
-              </fieldset>
+              <img src="./images/card-logo.svg" alt="" />
             </div>
-
-            <div class="form-item form-cvc">
-              <label for="cvc">CVC</label>
-              <input
-                required
-                type="number"
-                name="cvc"
-                id="cvc"
-                placeholder="e.g. 123"
-              />
-              <div class="error"></div>
+            <div class="front-card-details">
+              <div class="card-number">
+                <span>0000</span>
+                <span>0000</span>
+                <span>0000</span>
+                <span>0000</span>
+              </div>
+              <div class="name-and-exp-date">
+                <p class="display-name">JANE APPLESPEED</p>
+                <p class="display-exp-date">00/00</p>
+              </div>
             </div>
           </div>
-          <button type="submit" class="confirm-button">Confirm</button>
-        </form>
-        <div class="thank-you hidden">
-          <img src="./images/icon-complete.svg" alt="tick icon" />
-          <p class="thank-you-text">THANK YOU!</p>
-          <p class="card-added-text">We've added your card details</p>
-          <button>Continue</button>
         </div>
       </div>
     </main>
+
+    <section class="form-container">
+      <form action="">
+        <div class="form-item">
+          <label for="card-name">CARDHOLDER NAME</label>
+          <input
+            required
+            name="card-name"
+            type="text"
+            id="card-name"
+            placeholder="e.g. Jame Appleseed"
+          />
+          <div class="error"></div>
+        </div>
+        <div class="form-item">
+          <label for="card-number">CARD NUMBER</label>
+          <input
+            required
+            name="card-number"
+            id="card-number"
+            placeholder="eg 1234 1234 1234 1234"
+          />
+          <div class="error"></div>
+        </div>
+        <div class="exp-date-and-cvc">
+          <div>
+            <fieldset class="exp-date-form">
+              <legend>EXP. DATE (MM/YY)</legend>
+              <div class="exp-date-inputs">
+                <input
+                  required
+                  name="exp-mm"
+                  type="number"
+                  id="exp-mm"
+                  placeholder="MM"
+                />
+                <input
+                  required
+                  name="exp-yy"
+                  type="number"
+                  id="exp-yy"
+                  placeholder="YY"
+                />
+                <div class="error"></div>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="form-item form-cvc">
+            <label for="cvc">CVC</label>
+            <input
+              required
+              type="number"
+              name="cvc"
+              id="cvc"
+              placeholder="e.g. 123"
+            />
+            <div class="error"></div>
+          </div>
+        </div>
+        <button type="submit" class="confirm-button">Confirm</button>
+      </form>
+      <div class="thank-you hidden">
+        <img src="./images/icon-complete.svg" alt="tick icon" />
+        <p class="thank-you-text">THANK YOU!</p>
+        <p class="card-added-text">We've added your card details</p>
+        <button>Continue</button>
+      </div>
+    </section>
     <!-- Completed state start -->
 
     <footer class="attribution">
