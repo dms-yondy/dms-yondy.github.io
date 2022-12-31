@@ -84,6 +84,7 @@ body {
 
 .notification-time {
   margin: 0;
+  margin-top: 3px;
   color: var(--grayish-blue);
   font-size: 15px;
 }
@@ -119,9 +120,15 @@ body {
   color: var(--blue);
 }
 
+.notification-with-image {
+  position: relative;
+}
+
 .notification-with-image img {
   width: 40px;
   height: 40px;
+  position: absolute;
+  right: 0;
 }
 
 .notification-with-image img:hover {
@@ -171,7 +178,8 @@ body {
 
   .container {
     padding: 2rem;
-    width: 45%;
+    width: 50%;
+    max-width: 640px;
     margin: 0 auto;
     margin-top: 30px;
     background-color: var(--white);
