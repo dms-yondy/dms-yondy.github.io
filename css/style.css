@@ -476,6 +476,13 @@ header {
     width: 100%;
 }
 
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 .project {
     display: flex;
     flex-direction: column;
@@ -483,8 +490,7 @@ header {
     align-items: center;
     background: var(--clr-accent);
     border-radius: 5%;
-    padding: 1.5em;
-    width: 100%;
+    padding: 1em;
 }
 
 .project img {
@@ -516,6 +522,7 @@ header {
     text-decoration: none;
     color: var(--clr-dark);
     border-radius: 5%;
+    margin: 20px 0;
 }
 
 .frontend-mentor-link:hover {
@@ -524,7 +531,7 @@ header {
 }
 
 .frontend-mentor-tag {
-    margin-bottom: 100px;
+    margin-bottom: 20px;
 }
 /* Footer */
 
