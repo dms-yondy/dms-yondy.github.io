@@ -1,0 +1,160 @@
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --cyan-hover: hsla(178 100% 50% / 0.4);
+
+  --very-dark-blue: hsl(217, 54%, 11%);
+  --very-dark-blue-card: hsl(216, 50%, 16%);
+  --very-dark-blue-line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+
+  line-height: 1.6;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: var(--very-dark-blue);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 300px;
+  display: flex;
+  border-radius: 15px;
+  flex-direction: column;
+  background-color: var(--very-dark-blue-card);
+  padding: 1em;
+}
+
+.hero-image {
+  height: 300px;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.hero-image-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image-container:hover::before {
+  content: url("./images/icon-view.svg");
+  border-radius: 15px;
+  background-color: var(--cyan-hover);
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.title {
+  color: var(--white);
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.title:hover {
+  color: var(--cyan);
+  cursor: pointer;
+}
+
+.description {
+  font-weight: 300;
+  color: var(--soft-blue);
+  font-size: 16px;
+  margin: 0;
+  margin-top: 15px;
+}
+
+.price-and-time-left {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.price-and-time--img {
+  margin-right: 8px;
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--cyan);
+}
+
+.time-left {
+  display: flex;
+  align-items: center;
+  color: var(--soft-blue);
+  font-size: 16px;
+}
+
+.creator {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-top: solid 1px var(--very-dark-blue-line);
+  padding: 0.5em 0;
+}
+
+.creator-image {
+  height: 35px;
+  width: 35px;
+  border: solid 1px var(--white);
+  border-radius: 30px;
+  margin-right: 15px;
+}
+
+.creator-name {
+  font-weight: 300;
+  color: var(--white);
+  font-size: 16px;
+}
+
+.creator-name span {
+  color: var(--soft-blue);
+  margin-right: 3px;
+}
+
+.creator-name a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.creator-name a:hover {
+  cursor: pointer;
+  color: var(--cyan);
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  margin-top: auto;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
